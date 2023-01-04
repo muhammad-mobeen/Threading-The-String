@@ -48,17 +48,17 @@ class StringThreader:
             print("\n[!] Error occured while taking string input\nDetails: {}".format(e))
 
     def reverse_string(self):
-        '''Reverses the input string and displays it in ouput'''
+        '''Reverses the input string and displays it in output'''
         rev_string = self.istring[::-1]
         print("Reversed String: {}".format(rev_string))
 
     def capitalize_string(self):
-        '''Capitalizes the input string and displays it in ouput'''
+        '''Capitalizes the input string and displays it in output'''
         cap_string = self.istring.upper()
         print("Capitalized String: {}".format(cap_string))
 
     def shift_string(self):
-        '''Shifts the input string character by character and displays it in ouput'''
+        '''Shifts the input string character by character by 2 and displays it in output'''
         shifted_string = ''.join(chr(ord(s)+2) for s in self.istring)   # Using String Comprehensions
         print("Shifted String: {}".format(shifted_string))
 
